@@ -57,14 +57,14 @@
 // }
 
 // null and strict null checks
-function bla54(isItTrue: boolean) {
-    let num: number;
-    if(isItTrue) {
-        num = 12;
-    }
-    num = 33;
-    return num;
-}
+// function bla54(isItTrue: boolean) {
+//     let num: number;
+//     if(isItTrue) {
+//         num = 12;
+//     }
+//     num = 33;
+//     return num;
+// }
 
 // compailer errors, no emmit on erros, source maps, noImplicitAny
 
@@ -75,28 +75,7 @@ function bla54(isItTrue: boolean) {
 //     console.log("TEST")
 // }
 // class
-class Person {
-    public readonly age = 29;
-    private tajna ="tajna"
-    protected tajna2 = "tajna2"
 
-    // get age() {
-    //     return this._age;
-    // }
-
-    // set age(val:number) {
-    //     this._age = val;
-    // }
-    constructor(public name:string) {
-        this.name = name
-    }
-
-}
-var person1 = new Person("Biki");
-// console.log(person1.age)
-// person1.age = 28;
-// person1.age = 12;
-// person1.name
 // private, public, protected, readonly
 
 // constructor, shortcut for properties
@@ -104,20 +83,30 @@ var person1 = new Person("Biki");
 // private methods
 
 // inheritance, extends, overwrite, super()
-class Branko extends Person {
-   public hobbie = "Beer"
-}
 
-var branko = new Branko("Branko");
-// branko.hobbie
 // getters, setters
 
 // static properties, methods (helpers)
 
+// abstract
+
 // abstract classes
 
-// interface, optional args, unknown props, methods
+// interface
 
-// Generics
+// private constructor, singleton
+// class OnlyOne {
+//     private static instance: OnlyOne;
+//     private constructor(public name: string) {
 
+//     }
 
+//     static getInstance() {
+//         if(!OnlyOne.instance) {
+//             OnlyOne.instance = new OnlyOne("The Only One");
+//         }
+//         return OnlyOne.instance;
+//     }
+// }
+// let wrong = new OnlyOne("The only one");
+// let right = OnlyOne.getInstance();
